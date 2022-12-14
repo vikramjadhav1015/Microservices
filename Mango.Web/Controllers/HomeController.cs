@@ -31,7 +31,7 @@ namespace Mango.Web.Controllers
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
-        //[Authorize]
+        [Authorize]
         public async Task<IActionResult> Login()
         {
             //var accessToken = await HttpContext.GetTokenAsync("access_token");
